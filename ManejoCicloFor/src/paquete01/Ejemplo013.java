@@ -5,6 +5,9 @@
  */
 package paquete01;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -16,7 +19,15 @@ public class Ejemplo013 {
      */
     public static void main(String[] args) {
 
-        for (int i = 0; i < 10; i++) {
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+
+        int limite;
+
+        System.out.println("ingrese el limite");
+        limite = entrada.nextInt();
+
+        for (int i = 0; i < limite; i++) {
             System.out.printf("%d\n", i);
         }
 
